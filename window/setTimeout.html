@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .start {
+                background-color: #cc0066;
+                border: 1px solid #cc0066;
+                border-radius: 8px;
+                height: 100px;
+                width: 200px;
+                display: block;
+                margin: 50px 0;
+                color:white;
+                font-size:15px;
+                font-weight: 800;
+            }
+            .start:hover {
+                box-shadow: 2px 2px 1px #cccccc; 
+            }
+            
+            .end {
+                background-color: #ff6699;
+                border: 1px solid #ff6699;
+                border-radius: 8px;
+                height: 100px;
+                width: 200px;
+                display: block;
+                margin: 50px 0;
+                color:white;
+                font-size:15px;
+                font-weight: 800;
+            }
+            .end:hover {
+                box-shadow: 2px 2px 1px  #cccccc; 
+            }
+            
+            .number {
+                width: 150px;
+                margin-left: 15px;
+                padding: 5px;
+                outline: none;
+                border: 5px solid #ff9900;
+            }
+            
+            p {
+              font-size: 20px;  
+            }
+        </style>    
+    </head>
+    
+    
+    <body>
+        
+        <button class="start" onclick="startCount()">Start count!</button>
+        <input class="number" type="text" id="txt">
+        <button class="end" onclick="stopCount()">Stop count!</button>
+        
+        <p>
+            Click on the "Start count!" button above to start the timer. The input field will count forever, starting at 0. Click on the "Stop count!" button to stop the counting. Click on the "Start count!" button to start the timer again.
+        </p>
+        
+        <script>
+            var clock_status = 0; // 0:clock doesn't count;  1:clock is counting.
+            var x=0;
+            var i;
+            
+            function count() {
+                document.getElementById("txt").value = x;
+                x++;
+                i = setTimeout(count,1000);
+            }
+            
+            function startCount() {
+                clock_status = 1;
+                count();
+            }
+            
+            function stopCount() {
+                clock_status = 0;
+                clearTimeout(i);
+            }
+            
+        </script>
+    
+    
+    
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
