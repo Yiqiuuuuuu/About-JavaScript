@@ -1,0 +1,172 @@
+<!--
+The JavaScript Math object allows you to perform mathematical tasks on numbers.
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <!-- Math Constructor -->
+        <h2>Math Constructor</h2>
+        <p>Unlike other global objects, the Math object has no constructor. Methods and properties are static.</p>
+        <p>All methods and properties (constants) can be used without creating a Math object first.</p>
+        <br>
+        
+        
+        <!-- JavaScript provides 8 mathematical constants that can be accessed with the Math object:
+        Math.E        // returns Euler's number
+        Math.PI       // returns PI
+        Math.SQRT2    // returns the square root of 2
+        Math.SQRT1_2  // returns the square root of 1/2
+        Math.LN2      // returns the natural logarithm of 2
+        Math.LN10     // returns the natural logarithm of 10
+        Math.LOG2E    // returns base 2 logarithm of E
+        Math.LOG10E   // returns base 10 logarithm of E
+        -->
+        
+        <!-- Math.PI -->
+        <h2>JavaScript Math.PI</h2>
+        <p>Math.PI returns the ratio of a circle's circumference to its diameter.</p>
+        <p id="demo1"></p>
+        <script>
+            document.getElementById("demo1").innerHTML = Math.PI;
+        </script>
+        <br>
+        
+           
+        <!-- Math.round() -->
+        <h2>JavaScript Math.round()</h2>
+        <p>Math.round(x) returns the value of x rounded down to its nearest integer.</p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>   
+        <script>
+            document.getElementById("demo2").innerHTML = "the nearest integer of 4.7 is: " + Math.round(4.7);
+            document.getElementById("demo3").innerHTML = "the nearest integer of 4.4 is: " + Math.round(4.4);
+        </script>
+        <br>
+        
+        
+        <!-- Math.pow() -->
+        <h2>JavaScript Math.pow()</h2>
+        <p>Math.pow(x,y) returns the value of x to the power of y.</p>
+        <p id="demo4"></p>
+        <script>
+            document.getElementById("demo4").innerHTML = Math.pow(8,2);
+        </script>
+        <br>
+        
+        
+        <!-- Math.sqrt() -->
+        <h2>JavaScript Math.sqrt()</h2>
+        <p>Math.sqrt(x) returns the square root of x.</p>
+        <p id="demo5"></p>
+        <script>
+            document.getElementById("demo5").innerHTML = Math.sqrt(64);
+        </script>
+        <br>
+        
+        
+        <!-- Math.abs() -->
+        <h2>JavaScript Math.abs()</h2>
+        <p>Math.abs(x) returns the absolute (positive) value of x.</p>
+        <p id="demo6"></p>
+        <script>
+            document.getElementById("demo6").innerHTML = Math.abs(-50.50);
+        </script>
+        <br>
+        
+        
+        <!-- Math.ceil() -->
+        <h2>JavaScript Math.ceil()</h2>
+        <p>Math.ceil(x) returns the value of x rounded up to its nearest integer.</p>
+        <p id="demo7"></p>
+        <script>
+            document.getElementById("demo7").innerHTML = Math.ceil(4.4);
+        </script>
+        <br>
+        
+        
+        <!-- Math.floor() -->
+        <h2>JavaScript Math.floor()</h2>
+        <p>Math.floor(x) returns the value of x rounded down to its nearest integer.</p>
+        <p id="demo8"></p>
+        <script>
+            document.getElementById("demo8").innerHTML = Math.floor(4.7);
+        </script>
+        <br>
+        
+        
+        <!-- Math.sin() -->
+        <h2>JavaScript Math.sin()</h2>
+        <p>Math.sin(x) returns the sine (a value between -1 and 1) of the angle x (given in radians). If you want to use degrees instead of radians, you have to convert degrees to radians:<br>Angle in radians = (Angle in degrees) * PI / 180.</p>
+        <p id="demo9"></p>
+        <script>
+            document.getElementById("demo9").innerHTML = "The sine value of 90 degrees is " + Math.sin(90*Math.PI/180);
+        </script>
+        <br>
+        
+        
+        <!-- Math.cos() -->
+        <h2>Math.cos()</h2>
+        <p>Math.cos(x) returns the consine (a value between -1 and 1) of the angle x (given in radians). If you want to use degrees instead of radians, you have to convert degrees to radians:<br>Angle in radians = (Angle in degrees) * PI / 180.</p>
+        <p id="demo10"></p>
+        <script>
+            document.getElementById("demo10").innerHTML = "The cosine value of 0 degrees is " + Math.cos(0*Math.PI/180);
+        </script>
+        <br>
+        
+        
+        <!-- Math.min() -->
+        <h2>Math.min()</h2>
+        <p>Math.min() returns the lowest value in a list of arguments.</p>
+        <p id="demo11"></p>
+        <script>
+            document.getElementById("demo11").innerHTML = Math.min(0,150,30,20,-8,-200);
+        </script>
+        <br>
+        
+        
+        <!-- Math.max() -->
+        <h2>Math.max()</h2>
+        <p>Math.max() returns the highest value in a list of arguments.</p>
+        <p id="demo12"></p>
+        <script>
+             document.getElementById("demo12").innerHTML = Math.max(0,150,30,20,-8,-200);           
+        </script>
+        <br>
+        
+        
+        <!-- Math.ransom() -->
+        <h2>Math.random()</h2>
+        <p>Math.random() returns a random number between 0 (inclusive), and 1 (exclusive).</p>
+        <p id="demo13"></p>
+        <script>
+            document.getElementById("demo13").innerHTML = Math.random();
+        </script>
+        
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
