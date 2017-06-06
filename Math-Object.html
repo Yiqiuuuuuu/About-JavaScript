@@ -152,6 +152,40 @@ The JavaScript Math object allows you to perform mathematical tasks on numbers.
             document.getElementById("demo13").innerHTML = Math.random();
         </script>
         
+        
+        <p>
+            How to use Math.random()?<br>
+            Math.floor(Math.random() * 10);     // returns a number between 0 and 9<br>
+            Math.floor(Math.random() * 11);      // returns a number between 0 and 10<br>
+            Math.floor(Math.random() * 100);     // returns a number between 0 and 99<br>
+            Math.floor(Math.random() * 101);     // returns a number between 0 and 100<br>
+            Math.floor(Math.random() * 10) + 1;  // returns a number between 1 and 10<br>
+            Math.floor(Math.random() * 100) + 1; // returns a number between 1 and 100       
+        </p>
+        
+        <p>It might be a good idea to create a proper random function to use for all random integer purposes!</p>
+        <ul>
+            <li>Returns a random number between min (included) and max (excluded):</li>
+            <button onclick="document.getElementById('demo14').innerHTML = getRndInteger1(0,10)">Click Me</button>
+            <p id="demo14"></p>
+            <script>
+                function getRndInteger1(min, max) {
+                return Math.floor(Math.random() * (max - min)) + min;
+            }
+            </script>
+            
+            <li>Returns a random number between min and max (both included):</li>
+            <button onclick="document.getElementById('demo15').innerHTML = getRndInteger2(1,10)">Click Me</button>
+            <p id="demo15"></p>
+            <script>
+                function getRndInteger2(min, max) {
+                    return Math.floor(Math.random() * (max - min + 1) ) + min;
+                }
+            </script>
+        </ul>
+            
+        
+        
     </body>
 
 </html>
