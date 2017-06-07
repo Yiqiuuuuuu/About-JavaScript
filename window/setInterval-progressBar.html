@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #myProgress {
+                width:100%;
+                height:50px;
+                background-color: grey;
+                position: relative;
+            }
+            
+            #myBar {
+                width:1%;
+                height: 50px;
+                position: absolute;
+                background-color: pink;
+            }
+        </style>
+    </head>
+    
+    <head>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+        <br>
+        
+        <button onclick="start()">Start to progress</button>
+        
+        <script>
+            function start() {
+                var x = document.getElementById("myBar");
+                var i = setInterval(progress,10);
+                var w = 1;
+                
+                function progress() { 
+                    if (w >= 100.0) {
+                        clearInterval(i);
+                    } else {
+                    w = w + 0.1;
+                    x.style.width = w + '%';
+                    }
+                }
+            }
+        </script>
+    </head>
+</html>
