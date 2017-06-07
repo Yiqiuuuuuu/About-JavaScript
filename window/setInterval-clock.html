@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Use setInterval() and clearInterval() in this example to show a dynamic clock.</p>
+        
+        <p id="demo"></p>
+        
+        <button onclick="StopClock()">StopClock</button>
+        <button onclick="StartClock()">StartClock</button>
+        
+        <script>
+            var s;
+            
+            function StartClock() {
+                s = setInterval(myTimer,1000);
+            }
+            
+            function myTimer() {
+                var d = new Date();
+                var t = d.toLocaleTimeString();
+                document.getElementById("demo").innerHTML = t;
+            }
+            
+            function StopClock() {
+                clearInterval (s);
+            }
+           
+        </script>
+    
+    </body>
+</html>
